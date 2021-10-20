@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('/w3images/onepage_restaurant.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+  
+#bodybox {
+  margin: auto;
+  max-width: 550px;
+  font: 15px arial, sans-serif;
+  background-color: rgb(184, 247, 233);
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 15px;
+}
+
+#chatborder {
+  border-style: solid;
+  background-color: #f6f9f6;
+  background-image: url('https://1.bp.blogspot.com/-FoBRaYhHTUA/X5PM_w9OhjI/AAAAAAAAAGg/1BS8-iilos8u8H02H3kmNklU2HOVM8SGACLcBGAsYHQ/s600/general-banner.jpeg');
+  border-width: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 15px;
+  border-radius: 15px;
+}
+
+.chatlog {
+   font: 15px arial, sans-serif;
+}
+
+#chatbox {
+  font: 17px arial, sans-serif;
+  height: 22px;
+  width: 100%;
+}
+
+h1 {
+  margin: auto;
+}
+
+pre {
+  background-color: #f0f0f0;
+  margin-left: 20px;
+}
+
+</style>
+<body>
+
+
+
+    <!-- topic -->
+    <div id='bodybox'>
+        <center ><h1>SATHYABAMA</h1></center>
+      <div id='chatborder'>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      </div>
+      
+      <p id="chatlog7" class="chatlog">&nbsp;</p>
+      <p id="chatlog6" class="chatlog">&nbsp;</p>
+      <p id="chatlog5" class="chatlog">&nbsp;</p>
+      <p id="chatlog4" class="chatlog">&nbsp;</p>
+      <p id="chatlog3" class="chatlog">&nbsp;</p>
+      <p id="chatlog2" class="chatlog">&nbsp;</p>
+      <p id="chatlog1" class="chatlog">&nbsp;</p>
+      <input type="text" name="chat" id="chatbox" placeholder="Enter the below formet to chat with us" onfocus="placeHolder()">
+      <br/>
+      <br/>
+      
+      
+      
+    </div>
+
+    <!-- end topic -->
+    <p> ENTER IN THIS FORMET :  FROM  to TO<br/>Eg: 2to3 or 2 to 3<br/>OR <br/> Eg: sathyabama university arch to admission block <br/><br/>
+        1. SATHYABAMA  UNIVERSITY ARCH<br/>
+        2. ADIMISSION BLOCK<br/>
+        3. BLOCK 1<br/>
+        4. Boys Hostel(A/C)<br/>
+        5. juniors boys hostel <br/>
+        6. DR MGR ILLAM boys hostel <br/>
+        7. sinours boys hostel <br/>
+        8. architecture department <br/>
+        9. girls mess<br/>
+        10. physics lab<br/>
+        11. chemistry lab<br/>
+        12. staff room<br/>
+        13. cse lab<br/>
+        14. block 18<br/>
+        15. central libraly<br/>
+        16. dental <br/>
+        17. boys store<br/>
+        18. store<br/>
+        19. xerox shop<br/>
+        20. non veg mess<br/>
+        21. veg mess<br/>
+        22. church<br/>
+        23. sathyabama canteen<br/>
+        24. international research centre<br/>
+        25. drawing lab<br/>
+        26.BLOCK 14<br/>
+
+
+    <p>
+
+
+<script>
+  var messages = [], 
+    lastUserMessage = "", 
+    botMessage = "", 
+    talking = true; 
+  
+
+  function chatbotResponse() {
+    talking = true;
+    botMessage = "I'm confused , please enter the below format"; 
+    const hii = ["VITESH","VIVEK"]
+    botName = hii[Math.floor(Math.random()*(hii.length))];;
+  
+    if (lastUserMessage === 'hi' || lastUserMessage =='hello'|| lastUserMessage =='Hi' || lastUserMessage =='Hello'|| lastUserMessage =='HELLO' || lastUserMessage =='HI') {
+      const hi = ['hi , how can we help you!','hello , how can we help you!']
+      botMessage = hi[Math.floor(Math.random()*(hi.length))];;
+    }
+    if (lastUserMessage === 's' ) {
+      botMessage = "sathyabama university arch to admission block <br/>sathyabama university arch to block 1<br/> "
+    }
+  
+    if (lastUserMessage == '1-2' ||lastUserMessage == 'sathyabama university arch to admission block' ||lastUserMessage == 'sathyabamauniversityarchtoadmissionblock'  ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO ADMISSION BLOCK' ||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOADMISSIONBLOCK' || lastUserMessage ==' 1 to 2' || lastUserMessage =='1to2' || lastUserMessage =='1TO2' || lastUserMessage =='1To2' || lastUserMessage =='1 To 2' || lastUserMessage =='1 to 2') {
+      botMessage = 'now we are going from sathyabama university arch to admission block';
+      window.open("https://www.google.com/maps/d/edit?mid=1Beh-jNfg77ue7VRAa7MRu57S0DiZ9RKG&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-3' ||lastUserMessage == 'sathyabama university arch to block 1'||lastUserMessage == 'sathyabamauniversityarchtoblock1' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO BLOCK 1'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOBLOCK1' || lastUserMessage ==' 1 to 3' || lastUserMessage =='1to3' || lastUserMessage =='1TO3' || lastUserMessage =='1To3' || lastUserMessage =='1 To 3' || lastUserMessage =='1 to 3') {
+      botMessage = 'now we are going from sathyabama university arch to block one';
+      window.open("https://www.google.com/maps/d/edit?mid=1boG0h0ObvKsVTPUsh3djzWRBUcIfCh3J&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-4' ||lastUserMessage == 'sathyabama university arch to boys hostel(a/c)'||lastUserMessage == 'sathyabamauniversityarchtoboyshostel(a/c)' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO BOYS HOSTEL(A/C)'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOBOYSHOSTEL(A/C)' || lastUserMessage ==' 1 to 4' || lastUserMessage =='1to4' || lastUserMessage =='1TO4' || lastUserMessage =='1To4' || lastUserMessage =='1 To 4' || lastUserMessage =='1 to 4') {
+      botMessage = 'now we are going from sathyabama university arch to boys hostel ac';
+      window.open("https://www.google.com/maps/d/edit?mid=1qIVqfwjCC91FmFxGhUQSOqv4KEKGqsq-&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-5' ||lastUserMessage == 'sathyabama university arch to juniors boys hostel'||lastUserMessage == 'sathyabamauniversityarchtojuniorsboyshostel' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO JUNIORS BOYS HOSTEL'  ||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOJUNIORSBOYSHOSTEL'  || lastUserMessage ==' 1 to 5' || lastUserMessage =='1to5' || lastUserMessage =='1TO5' || lastUserMessage =='1To5' || lastUserMessage =='1 To 5' || lastUserMessage =='1 to 5') {
+      botMessage = 'now we are going from sathyabama university arch to juniors boys hostel ';
+      window.open("https://www.google.com/maps/d/edit?mid=1Zg5e6z9T87gZouc-UQdI8fzvtzBRPEIF&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-6'||lastUserMessage == 'sathyabama university arch to dr mgr illam boys hostel'||lastUserMessage == 'sathyabamauniversityarchtodrmgrillamboyshostel'  ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO DR MGR ILLAM BOYS HOSTEL'  ||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTODRMGRILLAMBOYSHOSTEL'  || lastUserMessage ==' 1 to 6' || lastUserMessage =='1to6' || lastUserMessage =='1TO6' || lastUserMessage =='1To6' || lastUserMessage =='1 To 6' || lastUserMessage =='1 to 6') {
+      botMessage = 'now we are going from sathyabama university arch to dr mgr illam boys hostel ';
+      window.open("https://www.google.com/maps/d/edit?mid=1Zg5e6z9T87gZouc-UQdI8fzvtzBRPEIF&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-7'||lastUserMessage == 'sathyabama university arch to sinours boys hostel' ||lastUserMessage == 'sathyabamauniversityarchtosinoursboyshostel'||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO SINOURS BOYS HOSTEL'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOSINOURSBOYSHOSTEL' || lastUserMessage ==' 1 to 7' || lastUserMessage =='1to7' || lastUserMessage =='1TO7' || lastUserMessage =='1To7' || lastUserMessage =='1 To 7' || lastUserMessage =='1 to 7') {
+      botMessage = 'now we are going from sathyabama university arch to sinours boys hostel ';
+      window.open("https://www.google.com/maps/d/edit?mid=1RwoV8vtJC_yDlQR1vMIs2xR-nVBVNMrE&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-8' ||lastUserMessage == 'sathyabama university arch to architecture department' ||lastUserMessage == 'sathyabamauniversityarchtoarchitecturedepartment' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO ARCHITECTURE DEPARTMENT' ||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOARCHITECTUREDEPARTMENT' || lastUserMessage ==' 1 to 8' || lastUserMessage =='1to8' || lastUserMessage =='1TO8' || lastUserMessage =='1To8' || lastUserMessage =='1 To 8' || lastUserMessage =='1 to 8') {
+      botMessage = 'now we are going from sathyabama university arch to arcticutre department ';
+      window.open("https://www.google.com/maps/d/edit?mid=1QabLyyBCW9CZIcnfHygRDr83qcsQ-elz&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-9' || lastUserMessage == 'sathyabama university arch to girls mess'|| lastUserMessage == 'sathyabamauniversityarchtogirlsmess'||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO GIRLS MESS '||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOGIRLSMESS'|| lastUserMessage ==' 1 to 9' || lastUserMessage =='1to9' || lastUserMessage =='1TO9' || lastUserMessage =='1To9' || lastUserMessage =='1 To 9' || lastUserMessage =='1 to 9') {
+      botMessage = 'now we are going from sathyabama university arch to girls mess ,girls mess is at ground floor of the block ';
+      window.open("https://www.google.com/maps/d/edit?mid=1smEk_zZgocq7kjB938HeqLp1nWGI1xbo&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-10' || lastUserMessage == 'sathyabama university arch to physics lab '|| lastUserMessage == 'sathyabamauniversityarchtophysicslab ' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO PHYSICS LAB' || lastUserMessage =='SATHYABAMAUNIVERSITYARCHTOPHYSICSLAB'|| lastUserMessage ==' 1 to 10' || lastUserMessage =='1to10' || lastUserMessage =='1TO10' || lastUserMessage =='1To10' || lastUserMessage =='1 To 10' || lastUserMessage =='1 to 10') {
+      botMessage = 'now we are going from sathyabama university arch to physics lab ,physics lab is at 1st floor of the block ';
+      window.open("https://www.google.com/maps/d/edit?mid=14iMHcXJAG7jvhHp8gJ0HAkk18PLZACUM&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-11' || lastUserMessage == 'sathyabama university arch to chemistry lab'|| lastUserMessage == 'sathyabamauniversityarchtochemistrylab' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO CHEMISTRY LAB ' ||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOCHEMISTRYLAB'|| lastUserMessage ==' 1 to 11' || lastUserMessage =='1to11' || lastUserMessage =='1TO11' || lastUserMessage =='1To11' || lastUserMessage =='1 To 11' || lastUserMessage =='1 to 11') {
+      botMessage = 'now we are going from sathyabama university arch to chemistry lab ,chemistry lab is at 1st floor of the block ';
+      window.open("https://www.google.com/maps/d/edit?mid=14iMHcXJAG7jvhHp8gJ0HAkk18PLZACUM&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-12' || lastUserMessage == 'sathyabama university arch to staff room'|| lastUserMessage == 'sathyabamauniversityarchtostaffroom' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO STAFF ROOM ' ||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOSTAFFROOM'|| lastUserMessage ==' 1 to 12' || lastUserMessage =='1to12' || lastUserMessage =='1TO12' || lastUserMessage =='1To12' || lastUserMessage =='1 To 12' || lastUserMessage =='1 to 12') {
+      botMessage = 'now we are going from sathyabama university arch to staff room ,staff room is at 1st floor of the block ';
+      window.open("https://www.google.com/maps/d/edit?mid=14iMHcXJAG7jvhHp8gJ0HAkk18PLZACUM&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-13' || lastUserMessage == 'sathyabama university arch to cse lab'|| lastUserMessage == 'sathyabamauniversityarchtocselab' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO CSE LAB '||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOCSELAB'|| lastUserMessage ==' 1 to 13' || lastUserMessage =='1to13' || lastUserMessage =='1TO13' || lastUserMessage =='1To13' || lastUserMessage =='1 To 13' || lastUserMessage =='1 to 13') {
+      botMessage = 'now we are going from sathyabama university arch to cse labs ,cse labs  is at left side or opposite of the girls mess ';
+      window.open("https://www.google.com/maps/d/edit?mid=14iMHcXJAG7jvhHp8gJ0HAkk18PLZACUM&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-14' || lastUserMessage == 'sathyabama university arch to block 18'  || lastUserMessage == 'sathyabamauniversityarchtoblock18' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO BLOCK 18 '||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOBLOCK18'|| lastUserMessage ==' 1 to 14' || lastUserMessage =='1to14' || lastUserMessage =='1TO14' || lastUserMessage =='1To14' || lastUserMessage =='1 To 14' || lastUserMessage =='1 to 14') {
+      botMessage = 'now we are going from sathyabama university arch to block 18';
+      window.open("https://www.google.com/maps/d/edit?mid=15_FwgaJiQYcTJpwLOxzMJC37XhHhOlhY&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-15' || lastUserMessage == 'sathyabama university arch to central libraly'  || lastUserMessage == 'sathyabamauniversityarchtocentrallibraly' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO CENTRAL LIBRALY'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOCENTRALLIBRALY'|| lastUserMessage ==' 1 to 15' || lastUserMessage =='1to15' || lastUserMessage =='1TO15' || lastUserMessage =='1To15' || lastUserMessage =='1 To 15' || lastUserMessage =='1 to 15') {
+      botMessage = 'now we are going from sathyabama university arch to central libraly ';
+      window.open("https://www.google.com/maps/d/edit?mid=1v8ySgFg3-9Ru1LIL9NVv2XiTolfRVPLM&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-16' || lastUserMessage == 'sathyabama university arch to dental'  || lastUserMessage == 'sathyabamauniversityarchtodental' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO DENTAL'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTODENTAL'|| lastUserMessage ==' 1 to 16' || lastUserMessage =='1to16' || lastUserMessage =='1TO16' || lastUserMessage =='1To16' || lastUserMessage =='1 To 16' || lastUserMessage =='1 to 16') {
+      botMessage = 'now we are going from sathyabama university arch to dental ';
+      window.open("https://www.google.com/maps/d/edit?mid=1Kk4G9RTm4pWqOocnL3J9o9IUgV0CyJqG&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-17' || lastUserMessage == 'sathyabama university arch to boys store'  || lastUserMessage == 'sathyabamauniversityarchtoboysstore' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO BOYS STORE'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOBOYSSTORE'|| lastUserMessage ==' 1 to 17' || lastUserMessage =='1to17' || lastUserMessage =='1TO17' || lastUserMessage =='1To17' || lastUserMessage =='1 To 17' || lastUserMessage =='1 to 17') {
+      botMessage = 'now we are going from sathyabama university arch to boys store ';
+      window.open("https://www.google.com/maps/d/u/0/edit?mid=182kEcaWnyS8lEPCFI34AmwoTX6LdO2CP&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-18' || lastUserMessage == 'sathyabama university arch to store'  || lastUserMessage == 'sathyabamauniversityarchtostore' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO STORE'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOSTORE'|| lastUserMessage ==' 1 to 18' || lastUserMessage =='1to18' || lastUserMessage =='1TO18' || lastUserMessage =='1To18' || lastUserMessage =='1 To 18' || lastUserMessage =='1 to 18') {
+      botMessage = 'now we are going from sathyabama university arch to store ';
+      window.open("https://www.google.com/maps/d/edit?mid=1s_qHdKJsEP1Hc3Y6KWkShtiXPvZpRhhF&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-19' || lastUserMessage == 'sathyabama university arch to xerox shop'  || lastUserMessage == 'sathyabamauniversityarchtoxeroxshop' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO XEROX SHOP'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOXEROXSHOP'|| lastUserMessage ==' 1 to 19' || lastUserMessage =='1to19' || lastUserMessage =='1TO19' || lastUserMessage =='1To19' || lastUserMessage =='1 To 19' || lastUserMessage =='1 to 19') {
+      botMessage = 'now we are going from sathyabama university arch to xerox shop .so,we have two shopes. one is inside the college and another one is near by boys hostel';
+      window.open("https://www.google.com/maps/d/edit?mid=1hw5V1CD4AIn6a9-L88DCAumx954Gl9k8&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-20' || lastUserMessage == 'sathyabama university arch to non veg mess'  || lastUserMessage == 'sathyabamauniversityarchtononvegmess' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO NON VEG MESS'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTONONVEGMESS'|| lastUserMessage ==' 1 to 20' || lastUserMessage =='1to20' || lastUserMessage =='1TO20' || lastUserMessage =='1To20' || lastUserMessage =='1 To 20' || lastUserMessage =='1 to 20') {
+      botMessage = 'now we are going from sathyabama university arch to non veg mess';
+      window.open("https://www.google.com/maps/d/edit?mid=16nsQJneYNA32uvuY7KVjIG_j5bhUT3j1&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-21' || lastUserMessage == 'sathyabama university arch to veg mess'  || lastUserMessage == 'sathyabamauniversityarchtovegmess' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO VEG MESS'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOVEGMESS'|| lastUserMessage ==' 1 to 21' || lastUserMessage =='1to21' || lastUserMessage =='1TO21' || lastUserMessage =='1To21' || lastUserMessage =='1 To 21' || lastUserMessage =='1 to 21') {
+      botMessage = 'now we are going from sathyabama university arch to veg mess';
+      window.open("https://www.google.com/maps/d/edit?mid=1KtbPKBqdjTycW93w4--gq144BeuObPbT&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-22' || lastUserMessage == 'sathyabama university arch to church'  || lastUserMessage == 'sathyabamauniversityarchtochurch' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO CHURCH'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOCHURCH'|| lastUserMessage ==' 1 to 22' || lastUserMessage =='1to22' || lastUserMessage =='1TO22' || lastUserMessage =='1To22' || lastUserMessage =='1 To 22' || lastUserMessage =='1 to 22') {
+      botMessage = 'now we are going from sathyabama university arch to church';
+      window.open("https://www.google.com/maps/d/edit?mid=1-UulH454SFjO3h-uJWu96xzeQI_g2iIN&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1' || lastUserMessage == 'sathyabama university arch'  || lastUserMessage == 'sathyabamauniversityarch' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCH' ){
+      botMessage = 'here is the sathyabama university arch';
+      window.open("https://www.google.com/maps/d/edit?mid=1X6V9wUoihccuJbl6eD8pXiPYhuKjhqo5&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '2' || lastUserMessage == 'admission block'  || lastUserMessage == 'admissionblock' ||lastUserMessage == 'ADMISSION BLOCK'||lastUserMessage == 'ADMISSIONBLOCK' ){
+      botMessage = 'here is the admission block';
+      window.open("https://www.google.com/maps/d/edit?mid=1jI5t8piUkvSO0u3WY_76f04bnHUkXF89&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '3' || lastUserMessage == 'block 1'  || lastUserMessage == 'block1' ||lastUserMessage == 'BLOCK1'||lastUserMessage == 'BLOCK 1' ){
+      botMessage = 'here is the block 1';
+      window.open("https://www.google.com/maps/d/edit?mid=13oDLl7F1cxPCGlsShnNWRWm_Qdu7sQVI&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '4' || lastUserMessage == '5'  || lastUserMessage == '6' ||lastUserMessage == '7' ||lastUserMessage == 'boys hostel(a/c)'||lastUserMessage == 'boyshostel(a/c)' ||lastUserMessage == 'BOYS HOSTEL(A/C)'||lastUserMessage == 'BOYSHOSTEL(A/C)'||lastUserMessage == 'boys hostel'||lastUserMessage == 'boyshostel' ||lastUserMessage == 'BOYS HOSTEL'||lastUserMessage == 'BOYSHOSTEL'||lastUserMessage == 'dr mgr illam boys hostel'||lastUserMessage == 'drmgrillamboyshostel'  ||lastUserMessage == 'DR MGR ILLAM BOYS HOSTEL'||lastUserMessage == 'DRMGRILLAMBOYSHOSTEL'||lastUserMessage == 'sinours boys hostel' ||lastUserMessage == 'sinoursboyshostel'||lastUserMessage == 'SINOURS BOYS HOSTEL'||lastUserMessage == 'SINOURSBOYSHOSTEL'     ){
+      botMessage = 'here is the boys hostels';
+      window.open("https://www.google.com/maps/d/edit?mid=15zJtKx77n-LB8nPQ3fKNLe2IYmRGUXxc&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '8' || lastUserMessage == 'architecture department'  || lastUserMessage == 'architecturedepartment' ||lastUserMessage == 'ARCHITECTURE DEPARTMENT'||lastUserMessage == 'ARCHITECTUREDEPARTMENT' || lastUserMessage == 'architecture' ||lastUserMessage == 'ARCHITECTURE' ){
+      botMessage = 'here is the architecture department';
+      window.open("https://www.google.com/maps/d/edit?mid=1v8IbbS0CnpYdEbZfwgfszrlFJ8YaFcyT&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '9' || lastUserMessage == 'girls mess'  || lastUserMessage == 'girlsmess' ||lastUserMessage == 'GIRLS MESS'||lastUserMessage == 'GIRLSMESS'  ){
+      botMessage = 'here is the girls mess ,ground floor';
+      window.open("https://www.google.com/maps/d/edit?mid=1YPvT-ZjJuzeVFy1t4s6dKA5rl45vZZmq&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '10' || lastUserMessage == 'physics lab'  || lastUserMessage == 'physicslab' ||lastUserMessage == 'PHYSICS LAB'||lastUserMessage == 'PHYSICSLAB'  ){
+      botMessage = 'here is the physics lab , first floor';
+      window.open("https://www.google.com/maps/d/edit?mid=1br3R9I3hxuvcsxQ0uGqyNFahlVnJWUV1&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '11' || lastUserMessage == 'chemistry lab'  || lastUserMessage == 'chemistrylab' ||lastUserMessage == 'CHEMISTRY LAB'||lastUserMessage == 'CHEMISTRYLAB'  ){
+      botMessage = 'here is the chemistry lab , first floor';
+      window.open("https://www.google.com/maps/d/edit?mid=1br3R9I3hxuvcsxQ0uGqyNFahlVnJWUV1&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-23' || lastUserMessage == 'sathyabama university arch to canteen'  || lastUserMessage == 'sathyabamauniversityarchtocanteen' ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO CANTEEN'||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOCANTEEN'|| lastUserMessage ==' 1 to 18' || lastUserMessage =='1to18' || lastUserMessage =='1TO18' || lastUserMessage =='1To18' || lastUserMessage =='1 To 18' || lastUserMessage =='1 to 18') {
+      botMessage = 'now we are going from sathyabama university arch to canteen ';
+      window.open("https://www.google.com/maps/d/edit?mid=19G_yMoPNfG5Aun1-7ZMZs1RYqcuQtLic&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-24' ||lastUserMessage == 'sathyabama university arch to international research centre' ||lastUserMessage == 'sathyabamauniversityarchtointernationalresearchcentre'  ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO INTERNATIONAL RESEARCH CENTRE' ||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOINTERNATIONALRESEARCHCENTRE' || lastUserMessage ==' 1 to 24' || lastUserMessage =='1to24' || lastUserMessage =='1TO24' || lastUserMessage =='1To24' || lastUserMessage =='1 To 24' || lastUserMessage =='1 to 24') {
+      botMessage = 'now we are going from sathyabama university arch to international research centre';
+      window.open("https://www.google.com/maps/d/edit?mid=1RX5CPI7rilVCMPaXRbujmbBt9MfVhmOl&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '1-25' ||lastUserMessage == 'sathyabama university arch to drawing lab' ||lastUserMessage == 'sathyabamauniversityarchtodrawinglab'  ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO DRAWING LAB' ||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTODRAWINGLAB' || lastUserMessage ==' 1 to 25' || lastUserMessage =='1to25' || lastUserMessage =='1TO25' || lastUserMessage =='1To25' || lastUserMessage =='1 To 25' || lastUserMessage =='1 to 25') {
+      botMessage = 'now we are going from sathyabama university arch to drawing lab';
+      window.open("https://www.google.com/maps/d/edit?mid=1tnoDqhaaX-T1YceDafeRxpihQSs2UFB8&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '3-1' ||lastUserMessage == 'block1 to sathyabama university arch'||lastUserMessage == 'block 1 to sathyabama university arch' ||lastUserMessage == 'block 1tosathyabamauniversityarch'  ||lastUserMessage == 'BLOCK 1 TO SATHYABAMA UNIVERSITY ARCH '||lastUserMessage == 'BLOCK1 TO SATHYABAMA UNIVERSITY ARCH ' ||lastUserMessage == 'BLOCK1TOSATHYABAMAUNIVERSITYARCH'||lastUserMessage == 'BLOCK 1TOSATHYABAMAUNIVERSITYARCH' || lastUserMessage ==' 3 to 1' || lastUserMessage =='3to1' || lastUserMessage =='3TO1' || lastUserMessage =='3To1' || lastUserMessage =='3 To 1' || lastUserMessage =='3 to 1') {
+      botMessage = 'now we are going from block 1 to sathyabama university arch ';
+      window.open("https://www.google.com/maps/d/edit?mid=1sTSMvuyUT18cQPkLp2AkCrPF4zEdJ6v_&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '3-2' ||lastUserMessage == 'block1 to adimission block'||lastUserMessage == 'block1 to adimission'||lastUserMessage == 'block 1 to adimission block' ||lastUserMessage == 'block 1 to adimission'||lastUserMessage == 'block 1toadimissionblock'||lastUserMessage == 'block 1toadimission'||lastUserMessage == 'BLOCK 1 TO ABIMISSION '  ||lastUserMessage == 'BLOCK 1 TO ABIMISSION BLOCK '||lastUserMessage == 'BLOCK1 TO ADIMISSION BLOCK ' ||lastUserMessage == 'BLOCK1 TO ADIMISSION'||lastUserMessage == 'BLOCK1TOADIMISSIONBLOCK'||lastUserMessage == 'BLOCK1TOADIMISSION'||lastUserMessage == 'BLOCK 1TOADIMISSIONBLOCK'||lastUserMessage == 'BLOCK 1TOADIMISSION' || lastUserMessage ==' 3 to 2' || lastUserMessage =='3to2' || lastUserMessage =='3TO2' || lastUserMessage =='3To2' || lastUserMessage =='3 To 2' || lastUserMessage =='3 to 2') {
+      botMessage = 'now we are going from block 1 to adimission block ';
+      window.open("https://www.google.com/maps/d/edit?mid=1ny8KY0XjCUTjGChc_JjHFKPQ8UGm6Sj_&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    if (lastUserMessage == '3-4'||lastUserMessage == 'block1 to boys hostel' ||lastUserMessage == 'block1 to boys hostel(a/c)'||lastUserMessage == 'block1 to boyshostel(a/c)'||lastUserMessage == 'block1 to boyshostel'||lastUserMessage == 'block 1 to boys hostel(a/c)' ||lastUserMessage == 'block 1 to boys hostel'||lastUserMessage == 'block 1 to boyshostel(a/c)'||lastUserMessage == 'block 1 to boyshostel'||lastUserMessage == 'block 1toboyshostel(a/c)'||lastUserMessage == 'block 1toboyshostel'||lastUserMessage == 'block 1 to boys hostel'||lastUserMessage == 'BLOCK 1 TO BOYS HOSTEL(A/C) '||lastUserMessage == 'BLOCK 1 TO BOYS HOSTEL '  ||lastUserMessage == 'BLOCK 1 TO BOYSHOSTEL(A/C)'||lastUserMessage == 'BLOCK 1 TO BOYSHOSTEL'||lastUserMessage == 'BLOCK1 TO BOYS HOSTEL(A/C) '||lastUserMessage == 'BLOCK1 TO BOYS HOSTEL' ||lastUserMessage == 'BLOCK1 TO BOYSHOSTEL'||lastUserMessage == 'BLOCK1TOBOYSHOSTEL'||lastUserMessage == 'BLOCK1TOBOYS HOSTEL'||lastUserMessage == 'BLOCK 1TOBOYS HOSTEL'||lastUserMessage == 'BLOCK 1TO BOYSHOSTEL' || lastUserMessage ==' 3 to 4' || lastUserMessage =='3to4' || lastUserMessage =='3TO4' || lastUserMessage =='3To4' || lastUserMessage =='3 To 4' || lastUserMessage =='3 to 4') {
+      botMessage = 'now we are going from block 1 to boys hostel ';
+      window.open("https://www.google.com/maps/d/edit?mid=1Q_BsKrgi_bA7AfL7yvVKOUOefG_-zDbP&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+     if (lastUserMessage == '1-26' ||lastUserMessage == 'sathyabama university arch to block 14' ||lastUserMessage == 'sathyabamauniversityarchtoadmissionblock'  ||lastUserMessage == 'SATHYABAMA UNIVERSITY ARCH TO ADMISSION BLOCK' ||lastUserMessage == 'SATHYABAMAUNIVERSITYARCHTOADMISSIONBLOCK' || lastUserMessage ==' 1 to 2' || lastUserMessage =='1to2' || lastUserMessage =='1TO2' || lastUserMessage =='1To2' || lastUserMessage =='1 To 2' || lastUserMessage =='1 to 2') {
+      botMessage = 'now we are going from sathyabama university arch to block 14';
+      window.open("https://www.google.com/maps/d/u/0/edit?mid=1qIVqfwjCC91FmFxGhUQSOqv4KEKGqsq-&usp=sharing", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes");
+    }
+    
+    
+    
+    
+    
+    
+  }
+  
+  
+  function newEntry() {
+    if (document.getElementById("chatbox").value != "") {
+      lastUserMessage = document.getElementById("chatbox").value;
+      document.getElementById("chatbox").value = "";
+      messages.push(lastUserMessage);
+      chatbotResponse();
+      messages.push("<b>" + botName + ":</b> " + botMessage);
+      Speech(botMessage);
+      for (var i = 1; i < 8; i++) {
+        if (messages[messages.length - i])
+          document.getElementById("chatlog" + i).innerHTML = messages[messages.length - i];
+      }
+    }
+  }
+  
+  function Speech(say) {
+    if ('speechSynthesis' in window && talking) {
+      var utterance = new SpeechSynthesisUtterance(say);
+      speechSynthesis.speak(utterance);
+    }
+  }
+  
+  document.onkeypress = keyPress;
+  function keyPress(e) {
+    var x = e || window.event;
+    var key = (x.keyCode || x.which);
+    if (key == 13 || key == 3) {
+      newEntry();
+    }
+    if (key == 38) {
+      console.log('hi')
+    }
+  }
+  
+  function placeHolder() {
+    document.getElementById("chatbox").placeholder = "";
+  }
+    </script>
+    
+
+</body>
+</html>
+
