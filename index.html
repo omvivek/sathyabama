@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f3b0221bb9fd4adcad1c62aca441a55c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f3b0221bb9fd4adcad1c62aca441a55c" ></div>
+        
+</body>
+<script>    
+    
+            var map_f3b0221bb9fd4adcad1c62aca441a55c = L.map(
+                "map_f3b0221bb9fd4adcad1c62aca441a55c",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    Location: [15.737855822654543, 79.26665185789177],
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1007436428f74d93b170ef7dc5cb4bbc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f3b0221bb9fd4adcad1c62aca441a55c);
+        
+    
+            var marker_cluster_cc91d178fbcf470a86a09e351ae52431 = L.markerClusterGroup(
+                {}
+            );
+            map_f3b0221bb9fd4adcad1c62aca441a55c.addLayer(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var marker_8951322361f04992bb3c3e1a7e7d0217 = L.marker(
+                [13.022204637435502, 77.56712083961622],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_f6cf176057af49f9a66970245708a3dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8951322361f04992bb3c3e1a7e7d0217.setIcon(icon_f6cf176057af49f9a66970245708a3dd);
+        
+    
+        var popup_f47cf0c273d24b8d9099b56eccbcc8f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0645be05403d42708cd1cb9c0473a477 = $(`<div id="html_0645be05403d42708cd1cb9c0473a477" style="width: 100.0%; height: 100.0%;">Indian Institute of Science</div>`)[0];
+            popup_f47cf0c273d24b8d9099b56eccbcc8f2.setContent(html_0645be05403d42708cd1cb9c0473a477);
+        
+
+        marker_8951322361f04992bb3c3e1a7e7d0217.bindPopup(popup_f47cf0c273d24b8d9099b56eccbcc8f2)
+        ;
+
+        
+    
+    
+            var marker_17d6b6664a264e29a335fe4f6e0c7539 = L.marker(
+                [42.377391235777445, -71.11741112056315],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_a788239a4e634dc2b84eee2ea7ab0b7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_17d6b6664a264e29a335fe4f6e0c7539.setIcon(icon_a788239a4e634dc2b84eee2ea7ab0b7a);
+        
+    
+        var popup_15dd7e5a6f4a4187bbc1a2568c8ccc1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f1b39a7c445411ca0cc1469e5ed9cfe = $(`<div id="html_0f1b39a7c445411ca0cc1469e5ed9cfe" style="width: 100.0%; height: 100.0%;">Harvard University</div>`)[0];
+            popup_15dd7e5a6f4a4187bbc1a2568c8ccc1c.setContent(html_0f1b39a7c445411ca0cc1469e5ed9cfe);
+        
+
+        marker_17d6b6664a264e29a335fe4f6e0c7539.bindPopup(popup_15dd7e5a6f4a4187bbc1a2568c8ccc1c)
+        ;
+
+        
+    
+    
+            var marker_401c63f312fc4cdd95312ef2e1feacef = L.marker(
+                [41.05615281373613, -73.54240477323432],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_d0795ae89cef49cda68eac019f0dc1d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_401c63f312fc4cdd95312ef2e1feacef.setIcon(icon_d0795ae89cef49cda68eac019f0dc1d0);
+        
+    
+        var popup_69982b91174c49819bd2b3066fad9f70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdf54430c9ab4d26a7f4e76d22d0eb40 = $(`<div id="html_cdf54430c9ab4d26a7f4e76d22d0eb40" style="width: 100.0%; height: 100.0%;">Stanford University</div>`)[0];
+            popup_69982b91174c49819bd2b3066fad9f70.setContent(html_cdf54430c9ab4d26a7f4e76d22d0eb40);
+        
+
+        marker_401c63f312fc4cdd95312ef2e1feacef.bindPopup(popup_69982b91174c49819bd2b3066fad9f70)
+        ;
+
+        
+    
+    
+            var marker_0edf69d13e6a4c419773419df5bfaf5a = L.marker(
+                [19.133612637684458, 72.91321425318766],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_598fbfc571bc4d3892fc9e1f7d2d89a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0edf69d13e6a4c419773419df5bfaf5a.setIcon(icon_598fbfc571bc4d3892fc9e1f7d2d89a6);
+        
+    
+        var popup_3354316d64e34725a5438414df717a60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e17d2e3360341cda63562d2dd714862 = $(`<div id="html_9e17d2e3360341cda63562d2dd714862" style="width: 100.0%; height: 100.0%;">Indian Institute of Technology Bombay</div>`)[0];
+            popup_3354316d64e34725a5438414df717a60.setContent(html_9e17d2e3360341cda63562d2dd714862);
+        
+
+        marker_0edf69d13e6a4c419773419df5bfaf5a.bindPopup(popup_3354316d64e34725a5438414df717a60)
+        ;
+
+        
+    
+    
+            var marker_eee25cc00a504c0fbb1471da0f5c48b0 = L.marker(
+                [52.3553136189929, 4.95529714482632],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_8c91be2c87d747479e49c53b2c1e4f34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eee25cc00a504c0fbb1471da0f5c48b0.setIcon(icon_8c91be2c87d747479e49c53b2c1e4f34);
+        
+    
+        var popup_99a2509481a943afa6eee9601db6085d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e6aed11a99b4275a9ebe99e44dec95c = $(`<div id="html_6e6aed11a99b4275a9ebe99e44dec95c" style="width: 100.0%; height: 100.0%;">University of Amsterdam</div>`)[0];
+            popup_99a2509481a943afa6eee9601db6085d.setContent(html_6e6aed11a99b4275a9ebe99e44dec95c);
+        
+
+        marker_eee25cc00a504c0fbb1471da0f5c48b0.bindPopup(popup_99a2509481a943afa6eee9601db6085d)
+        ;
+
+        
+    
+    
+            var marker_a3506eebf5b24103a064504ec6a8feb8 = L.marker(
+                [35.66085643988699, 139.68314796078076],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_97faf66e5c894c65aa50d09ccf545beb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3506eebf5b24103a064504ec6a8feb8.setIcon(icon_97faf66e5c894c65aa50d09ccf545beb);
+        
+    
+        var popup_de566815c546480890af008163b70d0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d3672daa84b44f6a8011ef6d04c4dac = $(`<div id="html_7d3672daa84b44f6a8011ef6d04c4dac" style="width: 100.0%; height: 100.0%;">University of Tokyo</div>`)[0];
+            popup_de566815c546480890af008163b70d0c.setContent(html_7d3672daa84b44f6a8011ef6d04c4dac);
+        
+
+        marker_a3506eebf5b24103a064504ec6a8feb8.bindPopup(popup_de566815c546480890af008163b70d0c)
+        ;
+
+        
+    
+    
+            var marker_88d77890fc2447eeac38b9293c66ed61 = L.marker(
+                [35.677915549477326, 139.72031789770895],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_5c4ef795eaf34aea8f7559e9be388253 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88d77890fc2447eeac38b9293c66ed61.setIcon(icon_5c4ef795eaf34aea8f7559e9be388253);
+        
+    
+        var popup_f535c93ec7234e04884a6e8ec21acbd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbf64917bb414dd08415c84d1afa6469 = $(`<div id="html_dbf64917bb414dd08415c84d1afa6469" style="width: 100.0%; height: 100.0%;">Kyoto University</div>`)[0];
+            popup_f535c93ec7234e04884a6e8ec21acbd4.setContent(html_dbf64917bb414dd08415c84d1afa6469);
+        
+
+        marker_88d77890fc2447eeac38b9293c66ed61.bindPopup(popup_f535c93ec7234e04884a6e8ec21acbd4)
+        ;
+
+        
+    
+    
+            var marker_a2029f82683d479b89a22cf019303cf2 = L.marker(
+                [37.631795830567455, 127.07749202659716],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_44b7180549a04a4283dcc5da57d75d7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2029f82683d479b89a22cf019303cf2.setIcon(icon_44b7180549a04a4283dcc5da57d75d7f);
+        
+    
+        var popup_e75934e231a549de8792780851018ecc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb9157c9f8c14cc9884093032ec387ea = $(`<div id="html_cb9157c9f8c14cc9884093032ec387ea" style="width: 100.0%; height: 100.0%;">Seoul National University</div>`)[0];
+            popup_e75934e231a549de8792780851018ecc.setContent(html_cb9157c9f8c14cc9884093032ec387ea);
+        
+
+        marker_a2029f82683d479b89a22cf019303cf2.bindPopup(popup_e75934e231a549de8792780851018ecc)
+        ;
+
+        
+    
+    
+            var marker_e43c6769accb46d3af2ee9e7246db499 = L.marker(
+                [37.58757722421375, 127.02693712474962],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_18b96b6d61364153ac0d8e39c1fd3988 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e43c6769accb46d3af2ee9e7246db499.setIcon(icon_18b96b6d61364153ac0d8e39c1fd3988);
+        
+    
+        var popup_19251d069f16422c8c06dbcd73fdf18a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad309cd60c8041a6b5dba76794b5d5d6 = $(`<div id="html_ad309cd60c8041a6b5dba76794b5d5d6" style="width: 100.0%; height: 100.0%;">Korea University</div>`)[0];
+            popup_19251d069f16422c8c06dbcd73fdf18a.setContent(html_ad309cd60c8041a6b5dba76794b5d5d6);
+        
+
+        marker_e43c6769accb46d3af2ee9e7246db499.bindPopup(popup_19251d069f16422c8c06dbcd73fdf18a)
+        ;
+
+        
+    
+    
+            var marker_329e08a9fbde46308ffba674e64ffff5 = L.marker(
+                [43.6677993897822, -79.39859385248333],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_5a47e237e9314ecabaf7877469268043 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_329e08a9fbde46308ffba674e64ffff5.setIcon(icon_5a47e237e9314ecabaf7877469268043);
+        
+    
+        var popup_f873a87e7e934ff1b4e62f32ebb1928c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d13c18d81f7c444080aac1a312817d68 = $(`<div id="html_d13c18d81f7c444080aac1a312817d68" style="width: 100.0%; height: 100.0%;">University of Toronto</div>`)[0];
+            popup_f873a87e7e934ff1b4e62f32ebb1928c.setContent(html_d13c18d81f7c444080aac1a312817d68);
+        
+
+        marker_329e08a9fbde46308ffba674e64ffff5.bindPopup(popup_f873a87e7e934ff1b4e62f32ebb1928c)
+        ;
+
+        
+    
+    
+            var marker_91eabf1ea39c48b6b8bdd6606c55051b = L.marker(
+                [48.85069267600807, 2.3402738539350603],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_1b7d4700273c4f20b151a157f7531f16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_91eabf1ea39c48b6b8bdd6606c55051b.setIcon(icon_1b7d4700273c4f20b151a157f7531f16);
+        
+    
+        var popup_d426e21c2613426c9c3eab97bbf2e333 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38d1ddcb48dd4017894200292a40e8bf = $(`<div id="html_38d1ddcb48dd4017894200292a40e8bf" style="width: 100.0%; height: 100.0%;">Sorbonne Universite</div>`)[0];
+            popup_d426e21c2613426c9c3eab97bbf2e333.setContent(html_38d1ddcb48dd4017894200292a40e8bf);
+        
+
+        marker_91eabf1ea39c48b6b8bdd6606c55051b.bindPopup(popup_d426e21c2613426c9c3eab97bbf2e333)
+        ;
+
+        
+    
+    
+            var marker_d5a96bbb978c4843a7127a144927a7bf = L.marker(
+                [55.85743084796285, 37.69137389651684],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_23cc05f305be4186a2b7b9477c7615c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5a96bbb978c4843a7127a144927a7bf.setIcon(icon_23cc05f305be4186a2b7b9477c7615c7);
+        
+    
+        var popup_96da33780d5547d5b0926692bbd1d8f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07f3c2ce2b5f4a25bbc5720c14398fb8 = $(`<div id="html_07f3c2ce2b5f4a25bbc5720c14398fb8" style="width: 100.0%; height: 100.0%;">Moscow State University</div>`)[0];
+            popup_96da33780d5547d5b0926692bbd1d8f0.setContent(html_07f3c2ce2b5f4a25bbc5720c14398fb8);
+        
+
+        marker_d5a96bbb978c4843a7127a144927a7bf.bindPopup(popup_96da33780d5547d5b0926692bbd1d8f0)
+        ;
+
+        
+    
+    
+            var marker_71ba0e25287746bea1294943c6b999dc = L.marker(
+                [55.03176895922487, 82.92061799833228],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_5ea30b677c7b4969ab45ab1defd725f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71ba0e25287746bea1294943c6b999dc.setIcon(icon_5ea30b677c7b4969ab45ab1defd725f5);
+        
+    
+        var popup_1319dccb28e142da80ed29a39fd1cdf7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da10d16c15974f1ebf4d470a9c4a00d6 = $(`<div id="html_da10d16c15974f1ebf4d470a9c4a00d6" style="width: 100.0%; height: 100.0%;">Novosibirsk State University</div>`)[0];
+            popup_1319dccb28e142da80ed29a39fd1cdf7.setContent(html_da10d16c15974f1ebf4d470a9c4a00d6);
+        
+
+        marker_71ba0e25287746bea1294943c6b999dc.bindPopup(popup_1319dccb28e142da80ed29a39fd1cdf7)
+        ;
+
+        
+    
+    
+            var marker_be01fcc4ff694e4c93c0fbee48cf4e6b = L.marker(
+                [-35.27758979136751, 149.11845447668105],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_6e6c085d8f53408faeaaab7c06e826d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be01fcc4ff694e4c93c0fbee48cf4e6b.setIcon(icon_6e6c085d8f53408faeaaab7c06e826d8);
+        
+    
+        var popup_9bfb0d5cbaef4a85a0be772ae36702bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15f5f02081534008b70561a9a3ea4bc0 = $(`<div id="html_15f5f02081534008b70561a9a3ea4bc0" style="width: 100.0%; height: 100.0%;">Australian National University</div>`)[0];
+            popup_9bfb0d5cbaef4a85a0be772ae36702bd.setContent(html_15f5f02081534008b70561a9a3ea4bc0);
+        
+
+        marker_be01fcc4ff694e4c93c0fbee48cf4e6b.bindPopup(popup_9bfb0d5cbaef4a85a0be772ae36702bd)
+        ;
+
+        
+    
+    
+            var marker_44db4e75169e40ee8f5d7d259f62ed97 = L.marker(
+                [22.636843, 75.85186],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_6410399bf82d403ba350c53ffcbcac8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44db4e75169e40ee8f5d7d259f62ed97.setIcon(icon_6410399bf82d403ba350c53ffcbcac8f);
+        
+    
+        var popup_43a801f6b715432bbadae3410cd3864f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_961d5609c64d40b487593d09311bf5d1 = $(`<div id="html_961d5609c64d40b487593d09311bf5d1" style="width: 100.0%; height: 100.0%;">SAGE University Indore Madhya Pradesh India</div>`)[0];
+            popup_43a801f6b715432bbadae3410cd3864f.setContent(html_961d5609c64d40b487593d09311bf5d1);
+        
+
+        marker_44db4e75169e40ee8f5d7d259f62ed97.bindPopup(popup_43a801f6b715432bbadae3410cd3864f)
+        ;
+
+        
+    
+    
+            var marker_e44fa87b918a4c8098de54ae311978a2 = L.marker(
+                [16.6686, 78.495598],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_08681b1ed6594a5e8e5166e22da62a61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e44fa87b918a4c8098de54ae311978a2.setIcon(icon_08681b1ed6594a5e8e5166e22da62a61);
+        
+    
+        var popup_ee0fb21e4243441e9008903dbe3b84f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af557597415f49c4a67b71dcadb9e4e3 = $(`<div id="html_af557597415f49c4a67b71dcadb9e4e3" style="width: 100.0%; height: 100.0%;">Sri Sai Degree College</div>`)[0];
+            popup_ee0fb21e4243441e9008903dbe3b84f1.setContent(html_af557597415f49c4a67b71dcadb9e4e3);
+        
+
+        marker_e44fa87b918a4c8098de54ae311978a2.bindPopup(popup_ee0fb21e4243441e9008903dbe3b84f1)
+        ;
+
+        
+    
+    
+            var marker_fb170bbfd2e14b91a7d88fb5e7df48d8 = L.marker(
+                [17.686836, 83.218475],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_8ce4861cc3714b989fbb341a618e2590 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fb170bbfd2e14b91a7d88fb5e7df48d8.setIcon(icon_8ce4861cc3714b989fbb341a618e2590);
+        
+    
+        var popup_7a85dd4cd8ec4fb0a350e8d0ffc75f7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b57623f664b482eadf614b5c6c5c316 = $(`<div id="html_3b57623f664b482eadf614b5c6c5c316" style="width: 100.0%; height: 100.0%;">AU College of Engineering for Women</div>`)[0];
+            popup_7a85dd4cd8ec4fb0a350e8d0ffc75f7c.setContent(html_3b57623f664b482eadf614b5c6c5c316);
+        
+
+        marker_fb170bbfd2e14b91a7d88fb5e7df48d8.bindPopup(popup_7a85dd4cd8ec4fb0a350e8d0ffc75f7c)
+        ;
+
+        
+    
+    
+            var marker_e999da1fb624441eb5290c6b320b1359 = L.marker(
+                [26.283895, 73.007874],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_d089d43664a94606ad591e8850df9d94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e999da1fb624441eb5290c6b320b1359.setIcon(icon_d089d43664a94606ad591e8850df9d94);
+        
+    
+        var popup_9cf4a953c4f444e19991d7b521d319f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a17e44b288b46bc84f0d8341e6513b2 = $(`<div id="html_8a17e44b288b46bc84f0d8341e6513b2" style="width: 100.0%; height: 100.0%;">Shah Goverdhan Lal Kabra Teachers' College</div>`)[0];
+            popup_9cf4a953c4f444e19991d7b521d319f1.setContent(html_8a17e44b288b46bc84f0d8341e6513b2);
+        
+
+        marker_e999da1fb624441eb5290c6b320b1359.bindPopup(popup_9cf4a953c4f444e19991d7b521d319f1)
+        ;
+
+        
+    
+    
+            var marker_29669ed7bbef4ae594db540a5d383662 = L.marker(
+                [11.014572, 78.795502],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_f9266b1077814fe186f05e8d89464a57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29669ed7bbef4ae594db540a5d383662.setIcon(icon_f9266b1077814fe186f05e8d89464a57);
+        
+    
+        var popup_59314a2c86854ef6b887c99d6a272c39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91ea7aedd0e94b2c9c17511fa07b3637 = $(`<div id="html_91ea7aedd0e94b2c9c17511fa07b3637" style="width: 100.0%; height: 100.0%;">Sri Renga Polytechnic College</div>`)[0];
+            popup_59314a2c86854ef6b887c99d6a272c39.setContent(html_91ea7aedd0e94b2c9c17511fa07b3637);
+        
+
+        marker_29669ed7bbef4ae594db540a5d383662.bindPopup(popup_59314a2c86854ef6b887c99d6a272c39)
+        ;
+
+        
+    
+    
+            var marker_e79396320db440b4a7e65b709de06095 = L.marker(
+                [29.01683, 77.007103],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_1f492eb1eae24bbf9e06b6a95c2b3cec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e79396320db440b4a7e65b709de06095.setIcon(icon_1f492eb1eae24bbf9e06b6a95c2b3cec);
+        
+    
+        var popup_c3df18b4a8764fedb17f4de9e9c94ea5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9a4f29d3c5b4a0d9ecb5c5181add446 = $(`<div id="html_b9a4f29d3c5b4a0d9ecb5c5181add446" style="width: 100.0%; height: 100.0%;">Mange Ram Women's College of Education</div>`)[0];
+            popup_c3df18b4a8764fedb17f4de9e9c94ea5.setContent(html_b9a4f29d3c5b4a0d9ecb5c5181add446);
+        
+
+        marker_e79396320db440b4a7e65b709de06095.bindPopup(popup_c3df18b4a8764fedb17f4de9e9c94ea5)
+        ;
+
+        
+    
+    
+            var marker_189d3856b472427bbc9baca191dd055c = L.marker(
+                [26.119909, 85.354034],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_310f1e346b2d445ba8ab5f6c165d8c0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_189d3856b472427bbc9baca191dd055c.setIcon(icon_310f1e346b2d445ba8ab5f6c165d8c0a);
+        
+    
+        var popup_26da7a4cdeda4618bf642a1d53f502d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd2cdf15550d4d9ca7acbba8ea560203 = $(`<div id="html_cd2cdf15550d4d9ca7acbba8ea560203" style="width: 100.0%; height: 100.0%;">Lord Buddha Eduacational Trust</div>`)[0];
+            popup_26da7a4cdeda4618bf642a1d53f502d0.setContent(html_cd2cdf15550d4d9ca7acbba8ea560203);
+        
+
+        marker_189d3856b472427bbc9baca191dd055c.bindPopup(popup_26da7a4cdeda4618bf642a1d53f502d0)
+        ;
+
+        
+    
+    
+            var marker_b010dfc9d5524ea09a1aa6d5d4468496 = L.marker(
+                [55.947388, -3.187194],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_06963d944621448db90d7f4e8a949973 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b010dfc9d5524ea09a1aa6d5d4468496.setIcon(icon_06963d944621448db90d7f4e8a949973);
+        
+    
+        var popup_3c31818552794d66b37722bdb50ddaf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59f1675cd0014ec7acfb6f0ddf6bb507 = $(`<div id="html_59f1675cd0014ec7acfb6f0ddf6bb507" style="width: 100.0%; height: 100.0%;">University of Edinburgh</div>`)[0];
+            popup_3c31818552794d66b37722bdb50ddaf1.setContent(html_59f1675cd0014ec7acfb6f0ddf6bb507);
+        
+
+        marker_b010dfc9d5524ea09a1aa6d5d4468496.bindPopup(popup_3c31818552794d66b37722bdb50ddaf1)
+        ;
+
+        
+    
+    
+            var marker_7784b9d2efe7417b9991c7c34038d11c = L.marker(
+                [51.521515, -0.127636],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_0de950d4cf9e4e4687e70131c5ebd808 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7784b9d2efe7417b9991c7c34038d11c.setIcon(icon_0de950d4cf9e4e4687e70131c5ebd808);
+        
+    
+        var popup_744b6cea6aba4282b987ec85ed70358e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_485ba667ab8c40779b56db394e1a8833 = $(`<div id="html_485ba667ab8c40779b56db394e1a8833" style="width: 100.0%; height: 100.0%;">University Of London</div>`)[0];
+            popup_744b6cea6aba4282b987ec85ed70358e.setContent(html_485ba667ab8c40779b56db394e1a8833);
+        
+
+        marker_7784b9d2efe7417b9991c7c34038d11c.bindPopup(popup_744b6cea6aba4282b987ec85ed70358e)
+        ;
+
+        
+    
+    
+            var marker_f5d228b15fb248f5a2ae5fb34b6fafc8 = L.marker(
+                [52.487144, -1.886977],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_fa091452a595486880f58ee186b45a52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5d228b15fb248f5a2ae5fb34b6fafc8.setIcon(icon_fa091452a595486880f58ee186b45a52);
+        
+    
+        var popup_11baa315fc5a482b9f5557ef27ec5a70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f40cf768ae664f2d8734c31c7148c1c0 = $(`<div id="html_f40cf768ae664f2d8734c31c7148c1c0" style="width: 100.0%; height: 100.0%;">Aston University</div>`)[0];
+            popup_11baa315fc5a482b9f5557ef27ec5a70.setContent(html_f40cf768ae664f2d8734c31c7148c1c0);
+        
+
+        marker_f5d228b15fb248f5a2ae5fb34b6fafc8.bindPopup(popup_11baa315fc5a482b9f5557ef27ec5a70)
+        ;
+
+        
+    
+    
+            var marker_d42cc5f3dda04d93983b13a992304cf2 = L.marker(
+                [53.004353, -2.26743],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_6583662e1d4d4ccbb966ae6920a108c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d42cc5f3dda04d93983b13a992304cf2.setIcon(icon_6583662e1d4d4ccbb966ae6920a108c8);
+        
+    
+        var popup_383cb58154bb4047a2606741749f3ae8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1b15f00662a4983ba0c5368b5ab561a = $(`<div id="html_a1b15f00662a4983ba0c5368b5ab561a" style="width: 100.0%; height: 100.0%;">Observatory Keele University Keele Staffordshire UK</div>`)[0];
+            popup_383cb58154bb4047a2606741749f3ae8.setContent(html_a1b15f00662a4983ba0c5368b5ab561a);
+        
+
+        marker_d42cc5f3dda04d93983b13a992304cf2.bindPopup(popup_383cb58154bb4047a2606741749f3ae8)
+        ;
+
+        
+    
+    
+            var marker_ecca51c6c2c04b31be48f624f60e60ff = L.marker(
+                [53.008717, -2.175701],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_c2b99945d13a45bbb022e593b485b17e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ecca51c6c2c04b31be48f624f60e60ff.setIcon(icon_c2b99945d13a45bbb022e593b485b17e);
+        
+    
+        var popup_4e959f685b6e49e885ec402eb11b0857 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee9e74af5ed842c791cdf69974df5fd6 = $(`<div id="html_ee9e74af5ed842c791cdf69974df5fd6" style="width: 100.0%; height: 100.0%;">Staffordshire University</div>`)[0];
+            popup_4e959f685b6e49e885ec402eb11b0857.setContent(html_ee9e74af5ed842c791cdf69974df5fd6);
+        
+
+        marker_ecca51c6c2c04b31be48f624f60e60ff.bindPopup(popup_4e959f685b6e49e885ec402eb11b0857)
+        ;
+
+        
+    
+    
+            var marker_7cc96d24982f40e299ec827f8e3ed44d = L.marker(
+                [52.132854, -106.631401],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_0755a0698bc348c0b2f30ec166767f45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7cc96d24982f40e299ec827f8e3ed44d.setIcon(icon_0755a0698bc348c0b2f30ec166767f45);
+        
+    
+        var popup_0885d3f01b1b464a9c75f17ee0e2ed69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ca40495fe7d48ed9108f7d9a4a2e742 = $(`<div id="html_9ca40495fe7d48ed9108f7d9a4a2e742" style="width: 100.0%; height: 100.0%;">University of Saskatchewan Saskatoon SK Canada</div>`)[0];
+            popup_0885d3f01b1b464a9c75f17ee0e2ed69.setContent(html_9ca40495fe7d48ed9108f7d9a4a2e742);
+        
+
+        marker_7cc96d24982f40e299ec827f8e3ed44d.bindPopup(popup_0885d3f01b1b464a9c75f17ee0e2ed69)
+        ;
+
+        
+    
+    
+            var marker_9d6d88a0e8a8419caae42762f49c55e1 = L.marker(
+                [49.029053, -122.285431],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_ef346c3a7eba4696b39005f75aa3efe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d6d88a0e8a8419caae42762f49c55e1.setIcon(icon_ef346c3a7eba4696b39005f75aa3efe1);
+        
+    
+        var popup_a948a3a888e248b8892274ada0905de8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09f03040c0a9421facf3b49d615289fd = $(`<div id="html_09f03040c0a9421facf3b49d615289fd" style="width: 100.0%; height: 100.0%;">University of the Fraser Valley  Abbotsford BC Canada</div>`)[0];
+            popup_a948a3a888e248b8892274ada0905de8.setContent(html_09f03040c0a9421facf3b49d615289fd);
+        
+
+        marker_9d6d88a0e8a8419caae42762f49c55e1.bindPopup(popup_a948a3a888e248b8892274ada0905de8)
+        ;
+
+        
+    
+    
+            var marker_db0e8cccc44247f7a0baecb11e3d5987 = L.marker(
+                [49.892441, -97.154472],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_4bb28351e0a44a29952450372fb7b16b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db0e8cccc44247f7a0baecb11e3d5987.setIcon(icon_4bb28351e0a44a29952450372fb7b16b);
+        
+    
+        var popup_c617efe65eee4b918f2d7b6d9fe854bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0149eede6d4405894e5667ceeba8059 = $(`<div id="html_e0149eede6d4405894e5667ceeba8059" style="width: 100.0%; height: 100.0%;">University of Winnipeg</div>`)[0];
+            popup_c617efe65eee4b918f2d7b6d9fe854bb.setContent(html_e0149eede6d4405894e5667ceeba8059);
+        
+
+        marker_db0e8cccc44247f7a0baecb11e3d5987.bindPopup(popup_c617efe65eee4b918f2d7b6d9fe854bb)
+        ;
+
+        
+    
+    
+            var marker_46c6630ab6514c658da1c7e139544970 = L.marker(
+                [-37.907803, 145.133957],
+                {}
+            ).addTo(marker_cluster_cc91d178fbcf470a86a09e351ae52431);
+        
+    
+            var icon_c299f6f3e0264fdc98309728d8536f2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46c6630ab6514c658da1c7e139544970.setIcon(icon_c299f6f3e0264fdc98309728d8536f2f);
+        
+    
+        var popup_df2f8b7f36704ded8da101befbabc4d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0720e75fb39847daa1d79c48c4842e0b = $(`<div id="html_0720e75fb39847daa1d79c48c4842e0b" style="width: 100.0%; height: 100.0%;">Monash University</div>`)[0];
+            popup_df2f8b7f36704ded8da101befbabc4d8.setContent(html_0720e75fb39847daa1d79c48c4842e0b);
+        
+
+        marker_46c6630ab6514c658da1c7e139544970.bindPopup(popup_df2f8b7f36704ded8da101befbabc4d8)
+        ;
+
+        
+    
+</script>
